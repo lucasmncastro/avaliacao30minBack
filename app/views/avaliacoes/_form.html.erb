@@ -1,4 +1,4 @@
-<%= form_for(avaliacao) do |f| %>
+<%= form_for(avaliacao, url: "/avaliar") do |f| %>
   <% if avaliacao.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(avaliacao.errors.count, "error") %> prohibited this avaliacao from being saved:</h2>
